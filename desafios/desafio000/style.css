@@ -13,6 +13,9 @@ h4 img{
     justify-content: center;
     max-width: 1024px;
 }
+main{
+    height: 80vh;
+}
 .box_resultado, .sumary{
     width: 50%;
     padding: 20px;
@@ -53,18 +56,32 @@ h4 img{
 .reaction, .memory, .verbal, .visual{
     display: flex;
     padding: 10px;
+    border-radius: 30px;
+    margin: 3px 0;
 }
 .reaction h4{
     color: red;
 }
 .memory h4{
-    color: yellow;
+    color: rgb(207, 207, 3);
 }
 .verbal h4{
-    color: aqua;
+    color: rgb(3, 173, 173);
 }
 .visual h4{
     color: blue;
+}
+.reaction{
+   background-color:rgba(255, 0, 0, 0.255);
+}
+.memory{
+    background-color: rgba(255, 255, 88, 0.225);
+}
+.verbal{
+    background-color: rgba(0, 255, 255, 0.255);
+}
+.visual{
+    background-color: rgba(0, 0, 255, 0.255);
 }
 .reaction span, .memory span, .verbal span, .visual span{
     position: absolute;
@@ -96,6 +113,9 @@ footer{
     }
     .box_resultado, .sumary{
         width: 90%;
+    }
+    main{
+        height: 100vh;
     }
 }
 @media(min-width: 800px){
