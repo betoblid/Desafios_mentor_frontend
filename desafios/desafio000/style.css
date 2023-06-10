@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+h4 img{
+    width: 20px;
+}
+.container_resultado, footer{
+    display: flex;
+    flex-flow: row nowrap; 
+    align-items: center;
+    justify-content: center;
+    max-width: 1024px;
+}
+.box_resultado, .sumary{
+    width: 50%;
+    padding: 20px;
+}
+.box_resultado{
+    background: linear-gradient(rgba(11, 95, 251, 0.603), rgba(120, 12, 228, 0.859));
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;   
+}
+.box_resultado, .circle, #res{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+#res{
+    text-align: center;
+    padding: 10px;
+}
+.circle{
+    border-radius: 100%;
+    width: 40%;
+    height: 20vh;
+    background-color: rgba(129, 76, 229, 0.859);
+}
+.circle p{
+    color: rgb(193, 193, 193);
+    font: 500 14px Poppins;
+}
+.sumary{
+    color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    height: 40vh;
+}
+.reaction, .memory, .verbal, .visual{
+    display: flex;
+    padding: 10px;
+}
+.reaction h4{
+    color: red;
+}
+.memory h4{
+    color: yellow;
+}
+.verbal h4{
+    color: aqua;
+}
+.visual h4{
+    color: blue;
+}
+.reaction span, .memory span, .verbal span, .visual span{
+    position: absolute;
+    right: 30px;
+    font: 800 16px Poppins;
+}
+.sumary button{
+    display: block;
+    background-color: rgba(42, 40, 40, 0.911);
+    padding: 13px;
+    margin: 20px auto;
+    width: 70%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    font: 700 17px Poppins;
+}
+footer{
+    height: 10vh;
+    margin: 20px auto;
+}
+@media(max-width: 800px){
+    .container_resultado{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .box_resultado, .sumary{
+        width: 90%;
+    }
+}
+@media(min-width: 800px){
+    .box_resultado{
+        border-radius: 40px;
+    }
+    .container_resultado{
+        height: 100vh;
+        margin: 0 auto;
+    }
+}

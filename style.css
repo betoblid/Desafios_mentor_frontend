@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Poppins';
+}
+header{
+    background-image: url("img_home/desafio.jpg");
+    background-position: center;
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font: 700 27px;
+}
+.text p, footer p{
+    text-align: center;
+    font: 500 20px;
+    margin: 30px auto;
+}
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 240px;
+    gap: 20px;
+    width: 100%;
+}
+
+.box{
+    width: 30%;
+    text-align: center;
+    border: 1px solid rgb(176, 176, 176);
+    padding-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 1px rgb(108, 69, 247);
+}
+.box img{
+    width: 230px;
+}
+.box a{
+    background-color: black;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font: 500 16px Poppins;
+    padding: 13px;
+    width: 60%;
+    margin: 10px auto; 
+    border-radius: 20px;
+}
+@media(max-width: 750px){
+    .box{
+        width: 250px;
+    }
+    header h1{
+        font-size: 24px;
+    }
+}
