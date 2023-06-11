@@ -6,7 +6,7 @@
 h4 img{
     width: 20px;
 }
-.container_resultado, footer{
+.container_resultado{
     display: flex;
     flex-flow: row nowrap; 
     align-items: center;
@@ -21,7 +21,7 @@ main{
     padding: 20px;
 }
 .box_resultado{
-    background: linear-gradient(rgba(11, 95, 251, 0.603), rgba(120, 12, 228, 0.859));
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsla(256, 72%, 46%, 1),hsl(241, 81%, 54%));
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;   
 }
@@ -40,7 +40,7 @@ main{
     border-radius: 100%;
     width: 40%;
     height: 20vh;
-    background-color: rgba(129, 76, 229, 0.859);
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsla(256, 72%, 46%, 1),hsl(241, 81%, 54%));
 }
 .circle p{
     color: rgb(193, 193, 193);
@@ -59,34 +59,27 @@ main{
     border-radius: 30px;
     margin: 3px 0;
 }
-.reaction h4{
-    color: red;
-}
-.memory h4{
-    color: rgb(207, 207, 3);
-}
-.verbal h4{
-    color: rgb(3, 173, 173);
-}
-.visual h4{
-    color: blue;
-}
 .reaction{
-   background-color:rgba(255, 0, 0, 0.255);
+    color: red;
+    background-color:rgba(255, 0, 0, 0.255);
 }
 .memory{
+    color: rgb(207, 207, 3);
     background-color: rgba(255, 255, 88, 0.225);
 }
 .verbal{
+    color: rgb(3, 173, 173);
     background-color: rgba(0, 255, 255, 0.255);
 }
 .visual{
+    color: blue;
     background-color: rgba(0, 0, 255, 0.255);
-}
-.reaction span, .memory span, .verbal span, .visual span{
+} 
+span{
     position: absolute;
     right: 30px;
-    font: 800 16px Poppins;
+    font: 400 16px Poppins;
+    color: black;
 }
 .sumary button{
     display: block;
@@ -101,11 +94,12 @@ main{
     font: 700 17px Poppins;
 }
 footer{
-    height: 10vh;
-    margin: 20px auto;
+    text-align: center;
+    margin-top: 30px;
 }
 @media(max-width: 800px){
     .container_resultado{
+        height: auto;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
@@ -115,12 +109,13 @@ footer{
         width: 90%;
     }
     main{
-        height: 100vh;
+        height: auto;
     }
 }
 @media(min-width: 800px){
     .box_resultado{
         border-radius: 40px;
+        padding: 20px;
     }
     .container_resultado{
         height: 100vh;

@@ -23,13 +23,13 @@ function gerar() {
 
     //manipulando o dom
     reaction.innerHTML = `<h4><img src="asend/raio.avif" alt=""> Reaction</h4>
-    <span>${reaction_numero}/100</span>`
+    <span><strong>${reaction_numero}</strong>/100</span>`
     memory.innerHTML = `<h4><img src="asend/relogio.png" alt=""> Memory</h4>
-    <span>${memory_numero}/100</span>`
+    <span><strong>${memory_numero}</strong>/100</span>`
     verbal.innerHTML = `<h4><img src="asend/verbal.png" alt=""> Vesbal</h4>
-    <span>${verbal_numero}/100</span>`
+    <span><strong>${verbal_numero}</strong>/100</span>`
     visual.innerHTML = `<h4><img src="asend/olho.png" alt=""> Visual</h4>
-    <span>${visual_numero}/100</span>`
+    <span><strong>${visual_numero}</strong>/100</span>`
 
     //pegando a aba resultado
     let lado_placar = document.getElementById("res")
