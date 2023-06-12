@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Desafio002 - Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="ranting.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Rating state start -->
+        <div class="box box-main" id="box-main">
+            <div class="card-icon">
+                <img src="images/icon-star.svg" alt="logo da pagina">
+            </div>
+            <h2>How did we do?</h2>
+
+            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p> 
+          
+            <div class="card-randing-number">
+               <div class="card-randing-number" id="number">
+                <button class="rading-number" onclick="verifica(1)">1</button>
+                <button class="rading-number" onclick="verifica(2)">2</button>
+                <button class="rading-number" onclick="verifica(3)">3</button>
+                <button class="rading-number" onclick="verifica(4)">4</button>
+                <button class="rading-number" onclick="verifica(5)">5</button>
+            </div>
+            </div>
+           <!--
+            <div class="card-randing-number" id="number">
+                <span class="rading-number" onclick="verifica(1)">1</span>
+                <span class="rading-number" onclick="verifica(2)">2</span>
+                <span class="rading-number" onclick="verifica(3)">3</span>
+                <span class="rading-number" onclick="verifica(4)">4</span>
+                <span class="rading-number" onclick="verifica(5)">5</span>
+            </div>
+            -->
+          
+            <button onclick="submit()" class="card-btn">Submit</button>
+            <!-- Rating state end -->  
+        </div>
+        <div class="box box-thank-you hiden" id="thank">
+            <!-- Thank you state start -->
+            <img src="images/illustration-thank-you.svg" alt="imgem thank you">
+            <div class="card-rating">You selected <span id="ranting-js"><!-- Add rating here --></span> out of 5</div>
+          
+            <h2>Thank you!</h2>
+           
+            <p>
+                We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+            </p>
+           <!-- Thank you state end -->
+           
+        </div>
+    </div>
+  
+  </div>
+</body>
+</html>

@@ -58,6 +58,10 @@ header{
 .desafio001{
     padding: 20px 0;
 }
+.desafio002 img{
+    width: 200px;
+    padding-top: 10px;
+}
 @media(max-width: 750px){
     .box{
         width: 250px;

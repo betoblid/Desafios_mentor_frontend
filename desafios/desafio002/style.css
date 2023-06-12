@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Overpass:wght@400;800&display=swap');
+:root{
+    --very-dark-blue: #131518;
+    --dark-blue: #262E38;
+    --medium-gray: #7C8798;
+    --light-gray: #969FAD;
+    --white: #FFF;
+    --orange: #FC7614;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Overpass;
+}
+.container{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background: var(--very-dark-blue);
+    color: var(--white);
+    padding: 30px;
+}
+.box{
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    padding: 24px;
+    width: 100%;
+    border-radius: 24px;
+}
+.card-icon img{
+    padding: 14px;
+    background: var(--dark-blue);
+    border-radius: 50%;
+    margin: 18px 0;
+}
+.box h2{
+    color: var(--white);
+    font: 800 26px Overpass;
+}
+.box p{
+    margin: 20px 0;
+    font: 400 15px Overpass;
+    color: var(--light-gray);
+}
+/*.card-randing-number{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.rading-number{
+    background-color: var(--dark-blue);
+    padding: 15px;
+    border-radius: 100%;
+    font: 400 15px Overpass;
+    transition: all 0.6s;
+}
+.rading-number:hover{
+    background: var(--orange);
+    transition: all 0.6s;
+}*/
+.card-randing-number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+.rading-number{
+    border-radius: 50%;
+    border: none;
+    margin-left: 10px;
+    padding: 20px;
+    font: 400 16px Overpass;
+    color: var(--medium-gray);
+    background-color: var(--dark-blue);
+    transition: all .7s;
+}
+.rading-number:hover{
+    background: var(--orange);
+    color: var(--white);
+    transition: all .6s;
+}
+.rading-number:focus{
+    background: var(--medium-gray);
+    color: var(--white);
+}
+.card-btn{
+    background: var(--orange);
+    padding: 15px 0;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    font: 400 15px Overpass;
+    color: var(--white);
+    text-transform: uppercase;
+}
+.box-thank-you{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-rating{
+    margin: 20px auto;
+    background-color: var(--dark-blue);
+    padding: 10px;
+    border-radius: 50px;
+    color: var(--orange);
+}
+.box-thank-you p{
+    text-align: center;
+}
+.hiden{
+    display: none;
+}
+@media(min-width: 500px){
+    .box{
+        max-width: 420px;
+    }
+    
+}
+@media(max-width: 320px){
+    .rading-number{
+        padding: 13px;
+        margin: 3px;
+    }
+}
