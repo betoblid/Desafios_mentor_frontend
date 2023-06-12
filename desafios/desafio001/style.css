@@ -1,0 +1,128 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Fraunces;
+}
+body{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(239, 224, 222);
+    /*Dark grayish blue: hsl(228, 12%, 48%)
+    White: hsl(0, 0%, 100%)*/
+}
+.box-imagem-desktop img{
+    width: 270px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.box-imagem-mobile img{
+    display: none;
+}
+.container-produto{
+    display: flex;
+    align-items: center;
+    height: auto;
+    border-radius: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: white;
+}
+.box-sobre{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-sobre h1{
+    line-height: 30px;
+}
+.box-sobre p{
+    padding: 10px;
+    font-size: 14px;
+    color: rgb(92, 92, 92);
+    line-height: 22px;
+    font-family: arial;
+}
+.box-sobre p:first-of-type{
+    font-family: monospace;
+    align-self: normal;
+}
+.box-sobre button{
+    padding: 10px 35px;
+    font: 900 16px Fraunces;
+    background-color: rgb(69, 146, 69);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.box-sobre button img{
+    margin-right: 10px;
+}
+.preco{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.preco h3{
+    font: 900 30px Fraunces;
+    color: rgb(1, 129, 1);
+    padding: 20px;
+}
+.preco span{
+    font: 300 14px Fraunces;
+    color: rgb(148, 148, 148);
+    text-decoration: line-through;
+    margin-left: 4px;
+}
+footer, header{
+    margin: 20px auto;
+    font-style: italic;
+    font: 300 11px monospace;
+    text-align: center;
+}
+@media(max-width: 700px){
+    body{
+        height: auto;
+    }
+    .container-produto{
+        flex-flow: column wrap;
+        width: 67%;
+    }
+    .box-imagem-desktop img{
+        display: none;
+    }
+    .box-imagem-mobile img{
+        display: block;
+        width: 100%;
+        border-radius: 20px;
+    }
+    .box-sobre{
+        width: 90%;
+        text-align: left;
+    }
+}
+@media(max-width: 382px){
+    .box-sobre h1{
+        font-size: 22px;
+    }
+    .box-sobre p{
+        line-height: 16px;
+    }
+    .preco span{
+        margin: 0;
+    }
+    .box-sobre button{
+        font: normal 12px Arial;
+    }
+    .box-sobre button img{
+        width: 10px;
+    }
+}

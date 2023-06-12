@@ -32,7 +32,6 @@ header{
     gap: 20px;
     width: 100%;
 }
-
 .box{
     width: 30%;
     text-align: center;
@@ -55,11 +54,19 @@ header{
     margin: 10px auto; 
     border-radius: 20px;
 }
+/*parte dedicada a configurar cada box dependendo do tamanho da imagem*/
+.desafio001{
+    padding: 20px 0;
+}
 @media(max-width: 750px){
     .box{
         width: 250px;
     }
     header h1{
         font-size: 24px;
+    }
+    /*parte dedicada a fazer os responsivos dos box*/
+    .desafio001{
+        padding: 30px 0;
     }
 }
