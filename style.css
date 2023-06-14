@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;    
     font-family: 'Poppins';
 }
 header{
@@ -32,6 +32,9 @@ header{
     gap: 20px;
     width: 100%;
 }
+.box a img{
+    width: 30%;
+}
 .box{
     width: 30%;
     text-align: center;
@@ -42,28 +45,34 @@ header{
 }
 .box img{
     width: 230px;
+    padding: 10px;
 }
-.box a{
+.text{
+    width: 70%;
+    margin: 0 auto;
+}
+.card-link{
     background-color: black;
-    display: block;
-    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 6px 0;
+}
+.card-link:hover{
+    background-color: rgb(46, 46, 46);
+}
+.card-link img{
+    width: 35px;
+}
+.card-link a{
+     color: white;
     text-decoration: none;
     font: 500 16px Poppins;
-    padding: 13px;
     width: 60%;
-    margin: 10px auto; 
-    border-radius: 20px;
-}
-/*parte dedicada a configurar cada box dependendo do tamanho da imagem*/
-.desafio001{
-    padding: 20px 0 20px 0;
-}
-.desafio002 img{
-    width: 200px;
-    padding-top: 1px;
-}
-.desafio003{
-    padding-top: 8px;
 }
 @media(max-width: 750px){
     .box{
@@ -72,8 +81,7 @@ header{
     header h1{
         font-size: 24px;
     }
-    /*parte dedicada a fazer os responsivos dos box*/
-    .desafio001{
-        padding: 30px 0;
+    .text{
+        width: 90%;
     }
 }
